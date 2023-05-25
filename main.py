@@ -302,3 +302,93 @@ Output: 1 9
 #         if weight < min_kg:
 #             min_kg = weight
 # print(max_kg, min_kg)
+
+"""
+Задача 1. Дан список чисел. Определите, сколько в нем
+встречается различных чисел.
+Input: [1, 1, 2, 0, -1, 3, 4, 4]
+Output: 6
+
+list = [1, 1, 2, 0, -1, 3, 4, 4]
+print(list)
+
+
+Задача 2. Дана последовательность из N целых чисел и число
+K. Необходимо сдвинуть всю последовательность
+(сдвиг - циклический) на K элементов вправо, K –
+положительное число.
+Input: [1, 2, 3, 4, 5] k = 3
+Output: [4, 5, 1, 2, 3]
+
+
+
+Задача 3. Напишите программу для печати всех уникальных
+значений в словаре.
+Input: [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"},
+{"VI": "S005"}, {"VII": " S005 "}, {" V ":" S009 "}, {" VIII
+":" S007 "}]
+Output: {'S005', 'S002', 'S007', 'S001', 'S009'}
+
+
+
+Задача 4. Дан массив, состоящий из целых чисел. Напишите
+программу, которая подсчитает количество
+элементов массива, больших предыдущего (элемента
+с предыдущим номером)
+Input: [0, -1, 5, 2, 3]
+Output: 2 (-1 < 5, 2 < 3)
+"""
+
+
+# Строки
+# some_str = 'hello world'
+# print(len(some_str))
+# print(some_str[-1])
+# print(some_str[::-1])
+# print(some_str)
+# #
+# for letter in some_str:
+#     print(letter)
+#
+# for ind in range(0, len(some_str)):
+#     print(ind)
+#
+# print(some_str.index('h'))
+
+# some_str[1] = 'l'
+# print(some_str)
+
+
+# some_list = [1, 'g', True, 1213.2121, [1, 2, 3], True]
+# print(some_list[0:])
+# some_list[0] = 2
+# print(some_list)
+# some_list.append(10)
+# print(some_list)
+# some_list.insert(2, False)
+# print(some_list)
+# some_list.pop(-1)
+# print(some_list)
+# # some_list.remove(True)
+# # print(some_list)
+# for element in some_list:
+#     if element == True:
+#         some_list.remove(True)
+# print(some_list)
+
+# n = int(input('КВведите кол-во элементов: '))
+# some_list = []
+# for _ in range(n):
+#     some_list.append(int(input()))
+# print(some_list)
+
+# some_list = [1, 2, 3, 4, 5, 6]
+#
+# for element in some_list:
+#     print(element)
+#
+# count = 0
+# for ind in range(1, len(some_list)):
+#     if some_list[ind] > some_list[ind - 1]:
+#         count += 1
+# print(count)
