@@ -45,9 +45,12 @@ for _ in range(n):
     some_list.append(int(input()))
 print(some_list)
 x = int(input('Введите искомый элемент: '))
-count = 0
+min_difference = x - some_list[0]
+index = 0
 for i in range(1, len(some_list)):
-    if some_list[i] < x:
-        count += 1
-print(f'Самый близкий по величине элемент к числу {x} является {some_list[count]}.')
+    count = x - some_list[i]
+    if 0 < count < min_difference:
+        min_difference = count
+        index = i
+print(f'Самый близкий по величине элемент к числу {x} является {some_list[index]}.')
 """
