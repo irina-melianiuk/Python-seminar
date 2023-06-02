@@ -5,7 +5,26 @@
 Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во
 элементов второго множества. Затем пользователь вводит сами элементы множеств.
 """
+"""
+n = (int(input("Введите число N элементов: ")))
+some_list_1 = []
+for i in range(n):
+    element = int(input("Введите элемент списка "))
+    some_list_1.append(element)
+print(some_list_1)
+x = set(sorted(some_list_1))
 
+m = (int(input("Введите число M элементов: ")))
+some_list_2 = []
+for i in range(m):
+    element = int(input("Введите элемент списка "))
+    some_list_2.append(element)
+print(some_list_2)
+y = set(sorted(some_list_2))
+
+some_set = x.intersection(y)
+print(some_set)
+"""
 
 """
 Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на
@@ -22,3 +41,23 @@
 собрать за один заход собирающий модуль, находясь перед некоторым кустом
 заданной во входном файле грядки.
 """
+n = (int(input("Введите количество кустов: ")))
+
+if 3 <= n < 1000:
+    import random
+    berry = list(random.randint(1, 10) for i in range(n))
+    print('количество ягод на кустах: ', berry)
+    summa = 0
+    res = []
+    for i in range(1, n - 1):
+        summa = berry[i] + berry[i - 1] + berry[i + 1]
+        res.append(summa)
+        res.sort()
+    print('количество собранных ягод за один заход: ', res)
+    max_berry = res[0]
+    for j in range(1, len(res)):
+        if res[j] >= max_berry:
+            max_berry = res[j]
+    print(f'Максимальное число ягод, которое можно собрать: {max_berry}')
+else:
+    print('Введеное значение не соответсвует условиям задачи.')
