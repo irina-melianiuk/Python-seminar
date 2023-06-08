@@ -32,13 +32,12 @@ def prime_number(n):
 print(prime_number(int(input("Введите число: "))))
 """
 
-"""
+
 def reverse(n):
     if n == 0:
         return ' '
-    num = int(input('Введите число больше нуля: '))
+    num = int(input('Введите элемент последовательности: '))
     return reverse(n - 1) + f' {num}'
 
-n = int(input('Введите число = '))
+n = int(input('Введите натульное число = '))
 print(reverse(n))
-"""
