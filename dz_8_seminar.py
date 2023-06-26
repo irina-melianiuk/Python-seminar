@@ -12,6 +12,8 @@ def search():
             if temp in i:
                 print(i)
 
+
+
 def new_number():
     surname = input('Введите фамилию: ')
     name = input('Введите имя и отчество: ')
