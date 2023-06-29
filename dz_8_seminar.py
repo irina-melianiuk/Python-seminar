@@ -31,3 +31,37 @@ elif mode == 2:
 else:
     print('Некорректный режим')
 
+"""
+with open('test.txt', 'r', encoding='utf-8') as file:
+line_list = file.read().splitlines()
+beautiful_list = []
+person_list = []
+for i in line_list:
+if i != '':
+person_list.append(i)
+else:
+beautiful_list.append(person_list)
+person_list = []
+if person_list:
+beautiful_list.append(person_list)
+"""
+"""
+with open('test.txt', 'r', encoding='utf-8') as file:
+line_list = file.read().splitlines()
+beautiful_list = []
+person_list = []
+for i in line_list:
+if i != '':
+person_list.append(i)
+else:
+beautiful_list.append(person_list)
+person_list = []
+if person_list:
+beautiful_list.append(person_list)
+
+surname = input('Введите фамилию: ')
+for person in beautiful_list:
+if surname == person[0]:
+print(*person, sep='\n')
+print()
+"""
